@@ -1,4 +1,4 @@
-package mz.uem.controller;
+package mz.uem.controller.tech;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("user")
-public class UserController {
+@RequestMapping("technic")
+public class TechController {
 
     @GetMapping("/")
     public String welcome(ModelMap model) {

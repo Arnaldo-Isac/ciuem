@@ -71,19 +71,19 @@
         data: {
             labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
             datasets: [{
-                    label: "USA",
+                    label: "USAA",
                     data: [15, 30, 55, 65, 60, 80, 95],
-                    backgroundColor: "rgba(235, 22, 22, .7)"
+                    backgroundColor: "rgba(222, 22, 22, .7)"
                 },
                 {
-                    label: "UK",
+                    label: "UKQ",
                     data: [8, 35, 40, 60, 70, 55, 75],
-                    backgroundColor: "rgba(235, 22, 22, .5)"
+                    backgroundColor: "rgba(205, 22, 22, .5)"
                 },
                 {
-                    label: "AU",
+                    label: "AUE",
                     data: [12, 25, 45, 55, 65, 70, 60],
-                    backgroundColor: "rgba(235, 22, 22, .3)"
+                    backgroundColor: "rgba(215, 22, 22, .3)"
                 }
             ]
             },
@@ -102,13 +102,13 @@
             datasets: [{
                     label: "Salse",
                     data: [15, 30, 55, 45, 70, 65, 85],
-                    backgroundColor: "rgba(235, 22, 22, .7)",
+                    backgroundColor: "rgba(205, 22, 22, .7)",
                     fill: true
                 },
                 {
                     label: "Revenue",
                     data: [99, 135, 170, 130, 190, 180, 270],
-                    backgroundColor: "rgba(235, 22, 22, .5)",
+                    backgroundColor: "rgba(208, 23, 22, .5)",
                     fill: true
                 }
             ]
@@ -148,10 +148,10 @@
             datasets: [{
                 backgroundColor: [
                     "rgba(235, 22, 22, .7)",
-                    "rgba(235, 22, 22, .6)",
-                    "rgba(235, 22, 22, .5)",
-                    "rgba(235, 22, 22, .4)",
-                    "rgba(235, 22, 22, .3)"
+                    "rgba(236, 22, 22, .6)",
+                    "rgba(237, 22, 22, .5)",
+                    "rgba(239, 22, 22, .4)",
+                    "rgba(245, 22, 22, .3)"
                 ],
                 data: [55, 49, 44, 24, 15]
             }]
@@ -170,11 +170,11 @@
             labels: ["Italy", "France", "Spain", "USA", "Argentina"],
             datasets: [{
                 backgroundColor: [
-                    "rgba(235, 22, 22, .7)",
+                    "rgba(235, 21, 22, .7)",
                     "rgba(235, 22, 22, .6)",
-                    "rgba(235, 22, 22, .5)",
-                    "rgba(235, 22, 22, .4)",
-                    "rgba(235, 22, 22, .3)"
+                    "rgba(235, 24, 22, .5)",
+                    "rgba(235, 78, 22, .4)",
+                    "rgba(235, 27, 22, .3)"
                 ],
                 data: [55, 49, 44, 24, 15]
             }]
@@ -193,11 +193,11 @@
             labels: ["Italy", "France", "Spain", "USA", "Argentina"],
             datasets: [{
                 backgroundColor: [
-                    "rgba(235, 22, 22, .7)",
-                    "rgba(235, 22, 22, .6)",
-                    "rgba(235, 22, 22, .5)",
-                    "rgba(235, 22, 22, .4)",
-                    "rgba(235, 22, 22, .3)"
+                    "rgba(235, 22, 2, .7)",
+                    "rgba(235, 22, 32, .6)",
+                    "rgba(235, 22, 252, .5)",
+                    "rgba(235, 22, 23, .4)",
+                    "rgba(235, 22, 28, .3)"
                 ],
                 data: [55, 49, 44, 24, 15]
             }]

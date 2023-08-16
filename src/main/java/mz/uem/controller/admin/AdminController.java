@@ -1,17 +1,13 @@
-package mz.uem.controller;
+package mz.uem.controller.admin;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.servlet.ModelAndView;
-
-import mz.uem.model.client.ClientModel;
-import mz.uem.model.client.ClientRepository;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class HomeController {
+@RequestMapping("admin")
+public class AdminController {
 
     @GetMapping("/")
     public String welcome(ModelMap model) {
@@ -30,16 +26,9 @@ public class HomeController {
         // return "home/home";
     }
 
-    @GetMapping("/forget")
-    public String forget(ModelMap model) {
-        model.addAttribute("msg", "Sessão iniciada com sucesso");
-        return "auth/signin";
-        // return "home/home";
-    }
-
-
     @GetMapping("/logon")
-    public String log(ModelMap model) {
+    public String logon(ModelMap model) {
+        // model.addAttribute("msg", "Sessão terminada");
         return "auth/signup";
     }
 }

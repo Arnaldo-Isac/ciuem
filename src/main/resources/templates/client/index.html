@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head th:insert="fragment/header :: html_head">
+</head>
+
+<body>
+    <div class="container-fluid position-relative d-flex p-0">
+        <!-- Content Start -->
+        <div class="content">
+            <!-- Navbar Start -->
+            <nav th:replace="fragment/navbar :: sidebar"></nav>
+            <!-- Navbar End -->
+
+            <!-- Content body -->
+            <div class="container-fluid pt-4 px-4 content_Service mb-3">
+                <div  class="content_Service row bg-secondary rounded align-items-lg-start mx-0" >
+                    <div class="row">
+                        <nav>
+                            <div id="nav-tab" role="tablist" class="nav nav-tabs nav-item">
+                                    
+                                <button class="nav-link active mt-sm-1" id="nav-home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                    aria-selected="true">Dados do Cliente</button>
+                                    
+                                <button class="nav-link mt-sm-1" id="nav-servicos-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-servicos" type="button" role="tab" aria-controls="nav-servicos"
+                                    aria-selected="true">Solicitar Serviços</button>
+
+                                <button class="nav-link mt-sm-1" id="nav-Equipament-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-Equipament" type="button" role="tab" aria-controls="nav-Equipament"
+                                    aria-selected="true">Equipamento</button>
+
+                                <button class="nav-link mt-sm-1" id="nav-sentform-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-sentform" type="button" role="tab" aria-controls="nav-sentform"
+                                    aria-selected="true">Enviar Solicitação</button>
+                                    
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            
+                            <div class="tab-pane fade show active p-3" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                
+                                <!-- inicio -->                                
+                                <div class="container-fluid pt-4 px-4">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h6> Dados do Cliente</h6>
+                                            <div>
+                                                <label for="clientContact">Pessoa de Contacto:</label><input type="text" name="clientContact" id="clientContact" class="form-control">
+                                            </div>
+                                            <div>
+                                                <label for="clientAddress">Endereço:</label><input type="text" name="clientAddress" id="clientAddress" class="form-control">
+                                            </div>
+                                            <div>
+                                                <label for="clientPhone">Telefone:</label><input type="tel" name="clientPhone" id="clientPhone" class="form-control">
+                                            </div>
+                                            <div>
+                                                <label for="clientCell">Celular:</label><input required type="tel" name="clientCell" id="clientCell" class="form-control">
+                                            </div>
+                                            <div>
+                                                <label for="clientFAX">FAX:</label><input type="tel" name="clientFAX" id="clientFAX" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <h6> Classificação do Cliente</h6>
+                                            <div class="row justify-content-end input-group">
+                                            <ul class="col-6">
+                                                <li class="form-check p-3">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkuem">
+                                                    <label class="form-check-label" for="checkuem">
+                                                        CIUEM/UEM
+                                                    </label>
+                                                </li>
+                                                <li class="form-check p-3">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkEstado">
+                                                    <label class="form-check-label" for="checkEstado">
+                                                        ESTADO
+                                                    </label>
+                                                </li>
+                                                <li class="form-check p-3">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkOng">
+                                                    <label class="form-check-label" for="checkOng">
+                                                       ONG
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <ul class="col-6">
+                                                <li class="form-check p-3">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkPartic">
+                                                    <label class="form-check-label" for="checkPartic">
+                                                        PARTICULAR
+                                                    </label>
+                                                </li>
+                                                <li class="form-check p-3">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkEmpresa">
+                                                    <label class="form-check-label" for="checkEmpresa">
+                                                        EMPRESA
+                                                    </label>
+                                                </li>
+                                                <li class="form-check p-3">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkEduca">
+                                                    <label class="form-check-label" for="checkEduca">
+                                                       EDUCAÇÃO
+                                                    </label>
+                                                </li>
+                                            </ul></div>
+                                        </div>
+                                    </div>
+                                </div>            
+                                <!-- fim -->
+                            </div>
+                            
+                            <div class="tab-pane fade p-3" id="nav-servicos" role="tabpanel" aria-labelledby="nav-servicos-tab">
+                                <h6> Solicitação de serviços</h6>
+                                <!-- inicio -->                                
+                                <div class="container-fluid pt-4 px-4">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <ul>
+                                                <li class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkredes">
+                                                    <label class="form-check-label" for="checkredes">
+                                                    REDES
+                                                    </label>
+                                                </li>
+                                                <li class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkwifi">
+                                                    <label class="form-check-label" for="checkwifi">
+                                                    WIRELESS
+                                                    </label>
+                                                </li>
+                                                <li class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkDesign">
+                                                    <label class="form-check-label" for="checkDesign">
+                                                        CONSULTORIA
+                                                    </label>
+                                                </li>                                    
+                                                <li class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkEmail">
+                                                    <label class="form-check-label" for="checkEmail">
+                                                        E-MAIL
+                                                    </label>
+                                                </li>
+                                                <li class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkNet">
+                                                    <label class="form-check-label" for="checkNet">
+                                                    INTERNET
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>                            
+                                        <div class="col-sm">
+                                            <ul>
+                                                <li class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkHard">
+                                                    <label class="form-check-label" for="checkHard">
+                                                    HARDWARE
+                                                    </label>
+                                                </li>
+                                                <li class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkForm">
+                                                    <label class="form-check-label" for="checkForm">
+                                                    FORMAÇÃO
+                                                    </label>
+                                                </li>
+                                                <li class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkVConf">
+                                                    <label class="form-check-label" for="checkVConf">
+                                                    VÍDEO CONFERÊNCIA
+                                                    </label>
+                                                </li>
+                                                <li class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkAEquip">
+                                                    <label class="form-check-label" for="checkAEquip">
+                                                    ALUGUER DE EQUIPAMENTOS
+                                                    </label>
+                                                </li>
+                                                <li class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkWShop">
+                                                    <label class="form-check-label" for="checkWShop">
+                                                    WORKSHOP
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>                            
+                                        <div class="col-sm">
+                                            <ul>
+                                                <li class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkDomain">
+                                                    <label class="form-check-label" for="checkDomain">
+                                                    DOMAIN
+                                                    </label>
+                                                </li>
+                                                <li class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkSoftware">
+                                                    <label class="form-check-label" for="checkSoftware">
+                                                    SOFTWARE
+                                                    </label>
+                                                </li>
+                                                <li class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkVirus">
+                                                    <label class="form-check-label" for="checkVirus">
+                                                    ANTI-VIRUS
+                                                    </label>
+                                                </li>
+                                                <li class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkDSoftware">
+                                                    <label class="form-check-label" for="checkDSoftware">
+                                                    DESENVOLVIMENTO DE SOFTWARE
+                                                    </label>
+                                                </li>
+                                                <li class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="checkConsult">
+                                                    <label class="form-check-label" for="checkConsult">
+                                                        WEB DESEIGN/HOSPEDAGEM
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <label for="outrosServicos">Outros serviços (Especaficar):</label>
+                                        <input type="text" name="outrosServicos" id="outrosServicos" style="height: 100px; text-align: right;" class="w-100 owl-wrapper overflow-scroll">
+                                    </div>
+                                </div>            
+                                <!-- fim -->
+                            </div>
+                        
+                            <div class="tab-pane fade p-3" id="nav-Equipament" role="tabpanel" aria-labelledby="nav-Equipament-tab">
+                                <h6> Solicitação de serviços</h6>
+                                <!-- inicio -->                                
+                                <div class="container-fluid pt-4 px-4">
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <h6> Para Equipamentos Preencher esta tabela:</h6>
+                                            <table class="table  table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">#</th>
+                                                        <th scope="col">Marca</th>
+                                                        <th scope="col">Modelo</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>John</td>
+                                                        <td>Doe</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>Mark</td>
+                                                        <td>Otto</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>Jacob</td>
+                                                        <td>Thornton</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>                            
+                                        <div class="col-sm">
+                                            <h6> Outro tipo de serviços:</h6>
+                                            <table class="table  table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Username</th>
+                                                        <th scope="col">Domain</th>
+                                                        <th scope="col">Website</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">k</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">k</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">l</th>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>                            
+                                    </div>
+                                    <div class="row ">
+                                        <label for="descServicos">Descrição da avaria ou serviço</label>
+                                        <input type="text" name="descServicos" id="descServicos" style="height: 100px; text-align: right;" class="w-100 owl-wrapper overflow-scroll">
+                                    </div>
+                                </div>            
+                                <!-- fim -->
+                            </div>
+                            
+                            <div class="tab-pane fade p-3" id="nav-sentform" role="tabpanel" aria-labelledby="nav-sentform-tab">
+                                <h6> Solicitação de serviços</h6>
+                                <!-- inicio -->                                
+                                <div class="container-fluid pt-4 px-4">
+                                    <div class="row">
+                                        <h6>Servicos Solicitados</h6>
+                                        <input type="text">
+                                    </div>
+                                </div>            
+                                <!-- fim -->
+                                
+                            </div>
+         
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Content Body End -->
+            
+            <!-- Footer Start -->
+            <div th:replace="fragment/footer :: rodape"></div>
+            <!-- Footer End -->
+        </div>
+        <!-- Content End -->
+    </div><div th:replace="fragment/footer :: javaScripts"></div>
+</body>
+
+</html>

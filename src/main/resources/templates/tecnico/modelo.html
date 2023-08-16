@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-pt" xmlns:th="https://www.thymeleaf.org">
+<html lang="pt-pt"  xmlns:th="https://www.thymeleaf.org">
 
 <head th:insert="fragment/header :: html_head">
 </head>
@@ -34,13 +34,7 @@
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active p-3" id="nav-home" role="tabpanel"
                                 aria-labelledby="nav-home-tab">
-                                <h4>Principal</h4>
-                                <div class="col-sm-12 col-xl-6">
-                                    <div class="bg-secondary rounded h-100 p-4">
-                                        <h6 class="mb-4">Multiple Bar Chart</h6>
-                                        <canvas id="worldwide-sales"></canvas>
-                                    </div>
-                                </div>
+                                <h2>Principal</h2>
                                 <P>
                                    PageMaker including versions of Lorem Ipsum.</P>
                             </div>
@@ -73,7 +67,7 @@
             <!-- Footer End -->
         </div>
         <!-- Content End -->
-    </div>
+    </div><div th:replace="fragment/footer :: javaScripts"></div>
 </body>
-    <div th:replace="fragment/footer :: javaScripts"></div>
+
 </html>
